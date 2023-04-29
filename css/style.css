@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+#wrapper{
+display: flex;
+}
+h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+button{
+    height: 50px;
+    width: 50px;
+    background-color: beige;
+    border: none;
+    outline: none;
+    border-radius: 15px solid black ;  
+    overflow: hidden;  
+}
+button .sun,
+button .moon{
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.35s;
+}
+button .moon{
+    background-color: rgba(0, 0, 0, 0.199);
+}
+button .sun{
+    background-color: rgb(225, 238, 123);
+}
+button:hover .sun{
+    margin-top: -100%;
+}
